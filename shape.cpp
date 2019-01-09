@@ -9,3 +9,11 @@ shape::Circle::Circle(int x, int y, double radius)
 shape::Rectangle::Rectangle(int x, int y, double length, double width)
   : Shape(x, y), length_{length}, width_{width}
 {}
+
+int shape::Shape::x_pos() const {
+  return x_;
+}
+
+int shape::Shape::y_pos() const {
+  return y_;
+}

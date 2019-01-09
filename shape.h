@@ -7,6 +7,9 @@ class Shape {
     Shape(int x, int y);
     virtual ~Shape() = default;
 
+    int x_pos() const;
+    int y_pos() const;
+
   private:
     int x_{};
     int y_{};
