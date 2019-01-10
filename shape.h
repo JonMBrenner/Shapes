@@ -10,6 +10,7 @@ class Shape {
     int x_pos() const;
     int y_pos() const;
     virtual double area() const = 0;
+    virtual double perimeter() const = 0;
 
   private:
     int x_{};
@@ -22,6 +23,7 @@ class Circle : public Shape {
     ~Circle() = default;
 
     double area() const override;
+    double perimeter() const override;
 
   private:
     double radius_{};
@@ -33,6 +35,7 @@ class Rectangle : public Shape {
     ~Rectangle() = default;
 
     double area() const override;
+    double perimeter() const override;
 
   private:
     double length_{};

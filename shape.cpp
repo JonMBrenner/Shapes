@@ -26,3 +26,11 @@ double shape::Circle::area() const {
 double shape::Rectangle::area() const {
   return length_ * width_;
 }
+
+double shape::Circle::perimeter() const {
+  return 2 * M_PI * radius_;
+}
+
+double shape::Rectangle::perimeter() const {
+  return 2 * (length_ +  width_);
+}
