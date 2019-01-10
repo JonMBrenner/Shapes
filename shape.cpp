@@ -1,4 +1,5 @@
 #include "shape.h"
+#include <cmath>
 
 shape::Shape::Shape(int x, int y) : x_{x}, y_{y} {}
 
@@ -16,4 +17,12 @@ int shape::Shape::x_pos() const {
 
 int shape::Shape::y_pos() const {
   return y_;
+}
+
+double shape::Circle::area() const {
+  return M_PI * radius_ * radius_;
+}
+
+double shape::Rectangle::area() const {
+  return length_ * width_;
 }
