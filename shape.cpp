@@ -34,3 +34,7 @@ double shape::Circle::perimeter() const {
 double shape::Rectangle::perimeter() const {
   return 2 * (length_ +  width_);
 }
+
+bool shape::has_smaller_area(const Shape& lhs, const Shape& rhs) {
+  return lhs.area() < rhs.area();
+}

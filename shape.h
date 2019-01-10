@@ -41,6 +41,9 @@ class Rectangle : public Shape {
     double length_{};
     double width_{};
 };
+
+bool has_smaller_area(const Shape& lhs, const Shape& rhs);
+
 }
 
 #endif
